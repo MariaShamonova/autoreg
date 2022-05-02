@@ -32,3 +32,6 @@ $(VISUAL):
 
 clean:
 	rm -f $(BINARY) $(VISUAL)
+
+profile:
+	$(CXX) -pg $(CXXFLAGS) $(SOURCES) $(LDFLAGS) -o pautoreg
