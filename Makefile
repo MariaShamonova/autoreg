@@ -10,7 +10,7 @@ CXXFLAGS += $(shell pkg-config --cflags blitz)
 # флаги сборки (библиотеки)
 LDFLAGS = 
 LDFLAGS += $(shell pkg-config --libs lapack)
-LDFLAGS += $(shell pkg-config --libs blas)
+LDFLAGS += $(shell pkg-config --libs openblas)
 LDFLAGS += $(shell pkg-config --libs blitz)
 
 SOURCES = main.cc
